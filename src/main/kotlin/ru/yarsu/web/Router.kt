@@ -15,5 +15,6 @@ fun router(renderer: TemplateRenderer)
     "/" bind Method.GET to HomeHandler(renderer),
     "/trianglesJson" bind Method.GET to JsonTrianglesHandler(renderer, listTriangles),
     "/triangles" bind Method.GET to TrianglesHandler(renderer, listTriangles),
-    "/triangles/{id}" bind Method.GET to CurrentTriangleHandler(renderer, listTriangles)
+    "/triangles/{id}" bind Method.GET to CurrentTriangleHandler(renderer, listTriangles),
+    "/secondJson" bind Method.GET to SecondJsonHandler(listTriangles)
 )

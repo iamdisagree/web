@@ -2,12 +2,11 @@
 
     {% extends "./HomeVM.peb"%}
 {% block content%}
-    <h1>Треугольник {{ triangle.id }}</h1>
+    <h1>Треугольник {{ model.triangle.id }}</h1>
     <ul>
-        <ol>{{ triangle.sideA }}</ol>
-        <ol>{{ triangle.sideB }}</ol>
-        <ol>{{ triangle.sideC }}</ol>
+        <li>{{ model.triangle.sideA }}</li>
+        <li>{{ model.triangle.sideB }}</li>
+        <li>{{ model.triangle.sideC }}</li>
     </ul>
 {% endblock%}
-{% endblock %}
 
