@@ -55,6 +55,7 @@ tasks {
 }
 
 dependencies {
+    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.16.1")
     implementation("org.slf4j:slf4j-api:1.6.1")
     implementation("org.slf4j:slf4j-simple:1.6.1")
     implementation("org.http4k:http4k-client-okhttp:${http4kVersion}")
