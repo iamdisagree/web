@@ -1,0 +1,7 @@
+{# @pebvariable name="model" type="ru.yarsu.web.models.JsonTrianglesVM" #}
+
+{% extends "./HomeVM.peb"%}
+    {% block content%}
+        {{ model.stringTriangles }}
+    {% endblock %}
+

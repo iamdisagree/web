@@ -1,0 +1,14 @@
+{# @pebvariable name="model" type="ru.yarsu.web.models.TrianglesVM" #}
+
+    {% extends "./HomeVM.peb"%}
+{% block content%}
+{% for triangle in model.listTriangles.triangles %}
+    <ul>
+        <ol>{{ triangle.sideA }}</ol>
+        <ol>{{ triangle.sideB }}</ol>
+        <ol>{{ triangle.sideC }}</ol>
+        <ol> <a href="/triangles/{{ triangle.id }}> ссылка</a></ol>
+    </ul>
+{% endfor%}
+{% endblock %}
+
